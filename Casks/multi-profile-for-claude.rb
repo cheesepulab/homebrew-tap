@@ -1,6 +1,6 @@
 cask "multi-profile-for-claude" do
-  version "0.1.0"
-  sha256 "5206ce1bb8583575b85acb644355a11bc00c1c4e7cdac34827900746db0bd072"
+  version "0.1.1"
+  sha256 "ddafbe8735c2b2bc8c04da7f0c9a6fd9d58c004aa10ce7538b319432c9d6e423"
 
   url "https://github.com/cheesepulab/multi-profile-for-claude/releases/download/v#{version}/Multi-Profile-for-Claude-#{version}.zip"
   name "Multi Profile for Claude"
@@ -18,11 +18,16 @@ cask "multi-profile-for-claude" do
         must_succeed: false
   end
 
-  uninstall quit: "io.github.manhduc-nguyen.multiprofileforclaude"
+  # Also the bundle ID that builds before 0.1.1 used.
+  uninstall quit: [
+    "io.github.cheesepulab.multiprofileforclaude",
+    "io.github.manhduc-nguyen.multiprofileforclaude",
+  ]
 
   zap trash: [
     "~/Applications/Claude Profiles",
     "~/Library/Application Support/MultiProfileForClaude",
+    "~/Library/Preferences/io.github.cheesepulab.multiprofileforclaude.plist",
     "~/Library/Preferences/io.github.manhduc-nguyen.multiprofileforclaude.plist",
   ]
 
