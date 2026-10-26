@@ -4,7 +4,7 @@ Homebrew casks for my Mac apps.
 
 ## Multi Profile for Claude
 
-Run several Claude desktop accounts side by side on your Mac. Source and details: [manhduc-nguyen/multi-profile-for-claude](https://github.com/manhduc-nguyen/multi-profile-for-claude).
+Run several Claude desktop accounts side by side on your Mac. Source and details: [cheesepulab/multi-profile-for-claude](https://github.com/cheesepulab/multi-profile-for-claude).
 
 ```bash
 brew install --cask manhduc-nguyen/tap/multi-profile-for-claude

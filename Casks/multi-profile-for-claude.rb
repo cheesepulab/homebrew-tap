@@ -2,10 +2,10 @@ cask "multi-profile-for-claude" do
   version "0.1.0"
   sha256 "5206ce1bb8583575b85acb644355a11bc00c1c4e7cdac34827900746db0bd072"
 
-  url "https://github.com/manhduc-nguyen/multi-profile-for-claude/releases/download/v#{version}/Multi-Profile-for-Claude-#{version}.zip"
+  url "https://github.com/cheesepulab/multi-profile-for-claude/releases/download/v#{version}/Multi-Profile-for-Claude-#{version}.zip"
   name "Multi Profile for Claude"
   desc "Run several Claude desktop accounts side by side"
-  homepage "https://github.com/manhduc-nguyen/multi-profile-for-claude"
+  homepage "https://github.com/cheesepulab/multi-profile-for-claude"
 
   depends_on macos: :ventura
 
